@@ -1,0 +1,121 @@
+/*********** TABLE ***********/
+table.main_table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_table tr {
+    text-align: left;
+    vertical-align: middle;
+    color: #222222;
+    font-size: 12px;
+}
+
+.main_table tr:hover {
+    background-color: #fdf5ce;
+    color: #c77405;
+}
+
+.main_table tr:active {
+    box-shadow: inset 0 1px 7px rgba(199, 116, 5, 0.3) !important;
+}
+
+.main_table tr th.title {
+    min-width: 180px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr th.lot {
+    max-width: 150px;
+    min-width: 150px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr th.date_modify {
+    min-width: 100px;
+    max-width: 100px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr th.rez {
+    min-width: 100px;
+    max-width: 100px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr th.more {
+    min-width: 60px;
+    max-width: 60px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr th.edit {
+    min-width: 25px;
+    max-width: 25px;
+    padding: 2px 0;
+    background-color: #E6E6E6;
+}
+
+.main_table tr.table_header:hover {
+    text-shadow: none;
+    cursor: default;
+}
+
+.main_table tr td {
+    border-bottom: 1px solid #dddddd;
+    padding: 3px 5px;
+}
+
+.main_table tr td.more {
+    border-bottom: 1px solid #dddddd;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.main_table tr td.edit {
+    border-bottom: 1px solid #dddddd;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+td a.td {
+    color: #4285f4;
+}
+
+td a.td:hover {
+    color: #4285f4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main_table tr th h5 {
+    margin: 2px;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    color: #222222;
+}
+
+.new_product{
+    background-color: #D1F0D2;
+}
+
+.new_product:hover {
+    background-color: #fdf5ce;
+    color: #c77405;
+}
+
+.control_this{
+    background-color: #ffdbdd;
+}
+
+.no_control:hover {
+    background-color: #fdf5ce;
+    color: #c77405;
+}

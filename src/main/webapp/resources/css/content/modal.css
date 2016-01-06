@@ -1,0 +1,190 @@
+/*********** MODAL WINDOW ***********/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    min-width: 505px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    margin: -350px 0 0 -248px;
+    padding: 0;
+    background: #fff;
+    overflow-y: auto;
+    border: none;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.9);
+}
+
+.modalDialog > div h3 {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+    padding: 30px 0 5px 0;
+}
+
+#create_product{
+    padding-top: 15px;
+}
+
+.wrrap_close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.close {
+    background: #F00;
+    color: #ffffff;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.close:hover {
+    background: #9f0505;
+    color: #fff font-weight : bold;
+}
+
+.wrrap_modal_header {
+    width: 488px;
+    position: relative;
+    top: 0;
+}
+
+.modal_header {
+    width: 488px;
+    height: 18px;
+    background-color: #4285f4;
+    position: fixed;
+}
+
+.title_modal{
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    width: auto;
+}
+
+.modalDialog > div .pag_product {
+    width: 160px;
+    margin: 0px 5px 10px 0;
+    float: right;
+}
+
+.modalDialog > div .pag_btn {
+    color: #333333;
+}
+
+.ttt {
+    display: none;
+}
+
+/*********** TABLE MODAL WINDOW **********/
+.t_modal {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+.t_modal tr {
+    padding: 0;
+    margin: 0;
+}
+
+.t_modal tr td {
+    padding: 0;
+    margin: 0;
+}
+
+.t_modal tr td p {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.t_td_name {
+    width: 45%;
+    min-width: 213px;
+}
+
+.t_td_input {
+    width: 55%
+}
+
+.t_td_input input {
+    width: 97%;
+    text-align: left;
+}
+
+.t_td_input select {
+    width: 99%
+}
+
+.t_td_input_count input {
+    width: 50%;
+}
+
+.t_td_input_count select {
+    width: 45%;
+    padding: 1px 0;
+}
+
+.t_td_input_term input[type="button"] {
+    width: 31%;
+    vertical-align: middle;
+}
+
+.t_td_input_term input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.t_td_input_term label{
+    font-size: 13px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    margin: 0 1px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+p.file_upload{
+    font-size: 11px;
+}
+
+.t_td_input_control label{
+    width: 40%;
+    font-size: 13px;
+    vertical-align: middle;
+}

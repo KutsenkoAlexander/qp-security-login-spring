@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="login-context.xml"/>
+    <import resource="login-servlet.xml"/>
+
+    <security:http auto-config="true" use-expressions="true">
+        <security:intercept-url pattern="/" access="permitAll"/>
+        <security:intercept-url pattern="/api/**" access="permitAll"/>
+        <security:intercept-url pattern="/login" access="permitAll"/>
+        <security:intercept-url pattern="/403page" access="permitAll"/>
+
+        <security:intercept-url pattern="/index**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/chemistry**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/complect**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/all**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/metal**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/metiz**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/nometall**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/setka**" access="isAuthenticated()"/>
+
+        <security:intercept-url pattern="/admin-home**" access="hasRole('ROLE_ADMIN')"/>
+        <security:form-login login-page="/login"
+                             default-target-url="/index"
+                             authentication-failure-url="/login?error=true"
+                             always-use-default-target="true"/>
+        <security:logout logout-success-url="/login"/>
+        <security:access-denied-handler error-page="/403page**"/>
+    </security:http>
+
+    <bean id="jdbcDaoImpl" class="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">
+        <property name="enableGroups" value="true"/>
+        <property name="enableAuthorities" value="false"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="jdbcDaoImpl">
+        </security:authentication-provider>
+    </security:authentication-manager>
+</beans>
+

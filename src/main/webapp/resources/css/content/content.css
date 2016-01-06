@@ -1,0 +1,100 @@
+@import "table.css";
+@import "paginator.css";
+@import "modal.css";
+
+/********** CONTENT *********/
+div#wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding-top: 60px;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    padding: 5px 0 12px 0;
+    margin: 0;
+}
+
+.list_magazin {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    width: 31%;
+    height: 17px;
+    display: inline-block;
+    background-color: #f8f8f8;
+    border: 1px solid #E6E6E6;
+    margin: 10px 5px;
+    padding: 10px 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333333;
+    font-size: 14px;
+    z-index: 0;
+}
+
+article:hover {
+    position: relative;
+    box-shadow: 0 1px 7px rgba(2, 2, 2, 0.2);
+}
+
+article:active {
+    box-shadow: inset 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+}
+
+.notification {
+    /*background-color: red;*/
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    right: -290px;
+    top: -35px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 17px;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(#ff4040, red);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.btn_add_magazin img {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 20px;
+    margin-top: -1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.btn_add_magazin img:hover {
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.add_form {
+    display: block;
+    width: 500px;
+    background-color: #ffffff;
+    z-index: 2;
+}

@@ -1,0 +1,27 @@
+/************** LOADING ************/
+#loading_wrapper {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 46%;
+    top: 50px;
+    display: none;
+    z-index: 99;
+}
+
+#loading_wrapper p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 2px 10px;
+    background-color: #fdf5ce;
+    border-radius: 20px;
+}
+
+#loading_wrapper img {
+    width: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: middle;
+}

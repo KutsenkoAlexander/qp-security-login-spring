@@ -1,0 +1,138 @@
+@import "nav.css";
+
+/*********** HEADER ***********/
+fieldset{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #4285f4;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header_content {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.header_content h2 {
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.search_form {
+    width: 50%;
+    height: 25px;
+    margin: 10px 0 0 20px;
+    padding: 2px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background-color: #FFFFFF;
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 89%;
+    height: 18px;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+}
+
+input[name="btn_params"] {
+    width: 20px; /* Ширина кнопки */
+    height: 25px; /* Высота кнопки */
+    border: none; /* Убираем рамку */
+    background: url(../../img/settings.png) 50% 50% no-repeat ; /* Параметры фона */
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+input[name="btn_search"] {
+    width: 20px; /* Ширина кнопки */
+    height: 25px; /* Высота кнопки */
+    border: none; /* Убираем рамку */
+    background: url(../../img/search.png) 50% 50% no-repeat; /* Параметры фона */
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.params {
+    border: 1px solid #4285f4;
+    border-radius: 7px;
+    padding: 3px;
+    position: relative;
+    top: 10px;
+    left: 69%;
+    width: 210px;
+    height: auto;
+    background: #4285f4;
+    color: #fff;
+    box-shadow: 0 0 7px #000; /* Добавляем тень для блока */
+    display: none;
+    z-index: 2;
+    font-size: 12px;
+}
+
+.params::after, .params::before {
+    content: '';
+    position: absolute;
+    background: #4285f4;
+    left: 46%;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    z-index: -1; /* Прячем за основным блоком */
+    transform: rotate(45deg); /* Поворачиваем на 45º */
+    -webkit-transform: rotate(45deg);
+}
+.params::before {
+    box-shadow: none; /* Прячем тень */
+}
+
+.params:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.params_tuggle{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+
+.params_tuggle p {
+    color: #111111;
+    padding: 2px;
+    margin: 0;
+}
+
+.inpt_param_search{
+    margin: 2px 0 2px 4px;
+    width: 140px;
+}
