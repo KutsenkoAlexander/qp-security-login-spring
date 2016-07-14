@@ -86,7 +86,7 @@ public class FileService {
         return responseBuilder.build();
     }
 
-    //DEL FILE FROM FILE STOREG AND DB
+    //DEL FILE FROM FILE STORAGE AND DB
     @Path("del_file")
     @GET
     @Consumes("application/json")
